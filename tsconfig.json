@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+      "declaration": true,
+      "target": "ES2017", // for node10.  Use "ES5" for node 6 or 8
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "outDir": "dist"
+    },
+    "include":  [
+      "src/**/*",
+      "test/**/*"
+    ],
+    "types": ["typePatches", "node", "webpack-env", "type"]
+}

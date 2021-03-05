@@ -1,0 +1,37 @@
+{
+  "name": "sheetshow",
+  "version": "1.0.0",
+  "description": "Google Sheets to Snowflake",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "prebuild": "eslint . --ext .ts,.tsx",
+    "build": "tsc",
+    "prestart": "tsc --build",
+    "start": "node ."
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "snowflake",
+    "google sheets",
+    "shared team drives"
+  ],
+  "author": "Brian Zinn",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "googleapis": "^67.0.0",
+    "snowflake-sdk": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "@types/snowflake-sdk": "^1.5.1",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "typescript": "^4.1.3"
+  }
+}
